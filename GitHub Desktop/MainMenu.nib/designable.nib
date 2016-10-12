@@ -1,0 +1,926 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="0.0" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="139" id="213"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <customObject id="2" customClass="NSApplication">
+            <connections>
+                <outlet property="hiddenKeyCommands" destination="208" id="212"/>
+            </connections>
+        </customObject>
+        <menu title="AMainMenu" systemMenu="main" id="3">
+            <items>
+                <menuItem title="GitHub Desktop" id="4">
+                    <menu key="submenu" title="GitHub Desktop" systemMenu="apple" id="5">
+                        <items>
+                            <menuItem title="关于 GitHub Desktop" id="6">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="openAboutPanel:" target="139" id="219"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="7">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="偏好设置…" keyEquivalent="," id="8">
+                                <connections>
+                                    <action selector="showPreferences:" target="139" id="226"/>
+                                    <binding destination="207" name="enabled" keyPath="values.GitHubAppDelegateHasCompletedSetupKey" id="337"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="检查更新..." id="9">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="openAboutPanel:" target="139" id="305"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="10">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="服务" id="11">
+                                <menu key="submenu" title="服务" systemMenu="services" id="12"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="13">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="隐藏 GitHub Desktop" keyEquivalent="h" id="14">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="227"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="隐藏其它" keyEquivalent="h" id="15">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="229"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="显示全部" id="16">
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="230"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="17">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="退出 GitHub Desktop" keyEquivalent="q" id="18">
+                                <connections>
+                                    <action selector="terminate:" target="2" id="228"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="文件" id="19">
+                    <menu key="submenu" title="文件" id="20">
+                        <items>
+                            <menuItem title="新建仓库…" keyEquivalent="n" id="21">
+                                <connections>
+                                    <action selector="showNewRepository:" target="-1" id="223"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="新建分支…" keyEquivalent="N" id="22">
+                                <connections>
+                                    <action selector="showCreateBranchesPopover:" target="-1" id="325"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="新建窗口" keyEquivalent="n" id="23">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="newMainWindow:" target="-1" id="319"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="24">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="克隆仓库…" keyEquivalent="o" id="25">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
+                                <connections>
+                                    <action selector="cloneRepositoryFromGitHub:" target="-1" id="323"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="添加本地仓库…" keyEquivalent="o" id="26">
+                                <connections>
+                                    <action selector="addLocalRepository:" target="-1" id="306"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="27">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="最近打开" id="28">
+                                <menu key="submenu" title="最近打开" systemMenu="recentDocuments" id="29">
+                                    <items>
+                                        <menuItem title="清空列表" id="30">
+                                            <connections>
+                                                <action selector="clearRecentDocuments:" target="-1" id="225"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="重新加载仓库" id="31">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="refreshAll:" target="139" id="332"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="32"/>
+                            <menuItem title="关闭" keyEquivalent="w" id="33">
+                                <connections>
+                                    <action selector="performClose:" target="-1" id="220"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="编辑" id="34">
+                    <menu key="submenu" title="编辑" id="35">
+                        <items>
+                            <menuItem title="撤消" keyEquivalent="z" id="36">
+                                <connections>
+                                    <action selector="undo:" target="-1" id="240"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="重做" keyEquivalent="Z" id="37">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                <connections>
+                                    <action selector="redo:" target="-1" id="245"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="38">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="剪切" keyEquivalent="x" id="39">
+                                <connections>
+                                    <action selector="cut:" target="-1" id="235"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="拷贝" keyEquivalent="c" id="40">
+                                <connections>
+                                    <action selector="copy:" target="-1" id="233"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="拷贝 SHA" alternate="YES" keyEquivalent="c" id="41">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="copySHA:" target="-1" id="316"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="粘贴" keyEquivalent="v" id="42">
+                                <connections>
+                                    <action selector="paste:" target="-1" id="238"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="删除" id="43">
+                                <connections>
+                                    <action selector="delete:" target="-1" id="237"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="全选" keyEquivalent="a" id="44">
+                                <connections>
+                                    <action selector="selectAll:" target="-1" id="234"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="切换所有文件" keyEquivalent="T" id="45">
+                                <connections>
+                                    <action selector="toggleAll:" target="-1" id="329"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="46">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="提交后自动同步" id="47">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="toggleCommitAndSync:" target="-1" id="322"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="48"/>
+                            <menuItem title="查找" id="49">
+                                <menu key="submenu" title="查找" id="50">
+                                    <items>
+                                        <menuItem title="Find…" tag="1" keyEquivalent="f" id="51">
+                                            <connections>
+                                                <action selector="performFindPanelAction:" target="-1" id="242"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Find Next" tag="2" keyEquivalent="g" id="52">
+                                            <connections>
+                                                <action selector="performFindPanelAction:" target="-1" id="241"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Find Previous" tag="3" keyEquivalent="G" id="53">
+                                            <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="performFindPanelAction:" target="-1" id="244"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Use Selection for Find" tag="7" keyEquivalent="e" id="54">
+                                            <connections>
+                                                <action selector="performFindPanelAction:" target="-1" id="247"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Jump to Selection" keyEquivalent="j" id="55">
+                                            <connections>
+                                                <action selector="centerSelectionInVisibleArea:" target="-1" id="243"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="拼写和语法" id="56">
+                                <menu key="submenu" title="拼写和语法" id="57">
+                                    <items>
+                                        <menuItem title="显示拼写和语法" keyEquivalent=":" id="58">
+                                            <connections>
+                                                <action selector="showGuessPanel:" target="-1" id="239"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="立即检查文稿" keyEquivalent=";" id="59">
+                                            <connections>
+                                                <action selector="checkSpelling:" target="-1" id="236"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="60"/>
+                                        <menuItem title="键入时检查拼写" id="61">
+                                            <connections>
+                                                <action selector="toggleContinuousSpellChecking:" target="-1" id="246"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="检查拼写和语法" id="62">
+                                            <connections>
+                                                <action selector="toggleGrammarChecking:" target="-1" id="250"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="自动纠正拼写" id="63">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="toggleAutomaticSpellingCorrection:" target="-1" id="276"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="替换" id="64">
+                                <menu key="submenu" title="替换" id="65">
+                                    <items>
+                                        <menuItem title="显示转换" id="66">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="orderFrontSubstitutionsPanel:" target="-1" id="277"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="67"/>
+                                        <menuItem title="智能拷贝/粘贴" tag="1" keyEquivalent="f" id="68">
+                                            <connections>
+                                                <action selector="toggleSmartInsertDelete:" target="-1" id="251"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="智能引号" tag="2" keyEquivalent="g" id="69">
+                                            <connections>
+                                                <action selector="toggleAutomaticQuoteSubstitution:" target="-1" id="252"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="智能破折号" id="70">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="toggleAutomaticDashSubstitution:" target="-1" id="278"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="智能链接" tag="3" keyEquivalent="G" id="71">
+                                            <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="toggleAutomaticLinkDetection:" target="-1" id="253"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="文本替换" id="72">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="toggleAutomaticTextReplacement:" target="-1" id="279"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="转换" id="73">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="转换" id="74">
+                                    <items>
+                                        <menuItem title="改为大写" id="75">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="uppercaseWord:" target="-1" id="275"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="改为小写" id="76">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="lowercaseWord:" target="-1" id="280"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="首字母大写" id="77">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="capitalizeWord:" target="-1" id="281"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="语音" id="78">
+                                <menu key="submenu" title="语音" id="79">
+                                    <items>
+                                        <menuItem title="开始朗读" id="80">
+                                            <connections>
+                                                <action selector="startSpeaking:" target="-1" id="232"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="停止朗读" id="81">
+                                            <connections>
+                                                <action selector="stopSpeaking:" target="-1" id="231"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="显示" id="82">
+                    <menu key="submenu" title="显示" id="83">
+                        <items>
+                            <menuItem title="未提交的更改" keyEquivalent="1" id="84">
+                                <connections>
+                                    <action selector="switchToChangesView:" target="-1" id="311"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="历史" keyEquivalent="2" id="85">
+                                <connections>
+                                    <action selector="switchToHistoryView:" target="-1" id="314"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="86"/>
+                            <menuItem title="转到提交消息" keyEquivalent="C" id="87">
+                                <connections>
+                                    <action selector="focusCommitMessageField:" target="-1" id="304"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="88"/>
+                            <menuItem title="显示仓库列表" keyEquivalent="R" id="89">
+                                <connections>
+                                    <action selector="toggleSidebar:" target="-1" id="335"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="转到过滤仓库" keyEquivalent="O" id="90">
+                                <connections>
+                                    <action selector="focusFilterRepositoriesField:" target="-1" id="330"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="仓库" tag="666" id="91">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="仓库" id="92">
+                        <items>
+                            <menuItem title="显示分支" keyEquivalent="b" id="93">
+                                <connections>
+                                    <action selector="showBranchesPopover:" target="-1" id="300"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="94"/>
+                            <menuItem title="在 Finder 打开" keyEquivalent="F" id="95">
+                                <connections>
+                                    <action selector="openInFinder:" target="-1" id="315"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="在终端打开" keyEquivalent="t" id="96">
+                                <connections>
+                                    <action selector="openInTerminal:" target="-1" id="327"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="在 Atom 打开" keyEquivalent="A" id="97">
+                                <connections>
+                                    <action selector="openInAtom:" target="-1" id="336"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="98"/>
+                            <menuItem title="同步" keyEquivalent="s" id="99">
+                                <connections>
+                                    <action selector="synchronizeOrPublish:" target="-1" id="296"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="推送" keyEquivalent="p" id="100">
+                                <connections>
+                                    <action selector="pushChanges:" target="-1" id="297"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="引入" keyEquivalent="P" id="101">
+                                <connections>
+                                    <action selector="pullFromRemote:" target="-1" id="298"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="102"/>
+                            <menuItem title="撤消最近的提交" keyEquivalent="z" id="103">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="undoMostRecentCommit:" target="-1" id="334"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="104"/>
+                            <menuItem title="新拉请求…" keyEquivalent="r" id="105">
+                                <connections>
+                                    <action selector="togglePullRequestView:" target="-1" id="331"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="在 GitHub 查看" keyEquivalent="g" id="106">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="jumpToGitHub:" target="-1" id="301"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="107"/>
+                            <menuItem title="仓库设置…" id="108">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="showRepositorySettings:" target="-1" id="320"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="109"/>
+                            <menuItem title="放弃所选文件更改…" id="110">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="discardAllSelectedChanges:" target="-1" id="307"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="恢复已放弃的更改" enabled="NO" id="111">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="restoreChanges:" target="-1" id="326"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="分支" id="112">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="分支" id="113">
+                        <items>
+                            <menuItem title="重命名…" id="114">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="renameCurrentBranch:" target="-1" id="328"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="删除…" id="115">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="deleteCurrentBranch:" target="-1" id="308"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="116"/>
+                            <menuItem title="从主线更新" id="117">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="mergeFromDefaultBranch:" target="-1" id="324"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="合并到当前分支…" id="118">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="mergeIntoCurrentBranch:" target="-1" id="312"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="119"/>
+                            <menuItem title="发布" id="120">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="publishBranch:" target="-1" id="317"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="窗口" id="121">
+                    <menu key="submenu" title="窗口" systemMenu="window" id="122">
+                        <items>
+                            <menuItem title="最小化" keyEquivalent="m" id="123">
+                                <connections>
+                                    <action selector="performMiniaturize:" target="-1" id="218"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="最大化" id="124">
+                                <connections>
+                                    <action selector="performZoom:" target="-1" id="248"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="进入全屏" keyEquivalent="f" id="125">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
+                                <connections>
+                                    <action selector="toggleFullScreen:" target="-1" id="302"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="126">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="GitHub Desktop" keyEquivalent="0" id="127">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                <connections>
+                                    <action selector="showMainWindow:" target="-1" id="313"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="128">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="前置全部窗口" id="129">
+                                <connections>
+                                    <action selector="arrangeInFront:" target="-1" id="217"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="帮助" id="130">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="帮助" systemMenu="help" id="131">
+                        <items>
+                            <menuItem title="GitHub Desktop 帮助" keyEquivalent="?" id="132">
+                                <connections>
+                                    <action selector="showHelp:" target="139" id="282"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="教程" id="133">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="addTutorialRepository:" target="139" id="318"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="134"/>
+                            <menuItem title="请求GitHub支持…" id="135">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="showSupport:" target="139" id="303"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="136"/>
+                            <menuItem title="最终用户许可协议" id="137">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="showEULA:" target="139" id="309"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="开源许可证" id="138">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="showLicenses:" target="139" id="299"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <customObject id="139" customClass="GitHubAppDelegate">
+            <connections>
+                <outlet property="deleteBranchMenuItem" destination="115" id="214"/>
+                <outlet property="mergeBranchMenuItem" destination="118" id="215"/>
+                <outlet property="renameBranchMenuItem" destination="114" id="216"/>
+            </connections>
+        </customObject>
+        <customObject id="140" customClass="NSFontManager"/>
+        <menuItem title="Format" id="141">
+            <modifierMask key="keyEquivalentModifierMask"/>
+            <menu key="submenu" title="Format" id="142">
+                <items>
+                    <menuItem title="Font" id="143">
+                        <modifierMask key="keyEquivalentModifierMask"/>
+                        <menu key="submenu" title="Font" systemMenu="font" id="144">
+                            <items>
+                                <menuItem title="Show Fonts" keyEquivalent="t" id="145">
+                                    <connections>
+                                        <action selector="orderFrontFontPanel:" target="140" id="254"/>
+                                    </connections>
+                                </menuItem>
+                                <menuItem title="Bold" tag="2" keyEquivalent="b" id="146">
+                                    <connections>
+                                        <action selector="addFontTrait:" target="140" id="255"/>
+                                    </connections>
+                                </menuItem>
+                                <menuItem title="Italic" tag="1" keyEquivalent="i" id="147">
+                                    <connections>
+                                        <action selector="addFontTrait:" target="140" id="256"/>
+                                    </connections>
+                                </menuItem>
+                                <menuItem title="Underline" keyEquivalent="u" id="148">
+                                    <connections>
+                                        <action selector="underline:" target="-1" id="257"/>
+                                    </connections>
+                                </menuItem>
+                                <menuItem isSeparatorItem="YES" id="149"/>
+                                <menuItem title="Bigger" tag="3" keyEquivalent="+" id="150">
+                                    <connections>
+                                        <action selector="modifyFont:" target="140" id="258"/>
+                                    </connections>
+                                </menuItem>
+                                <menuItem title="Smaller" tag="4" keyEquivalent="-" id="151">
+                                    <connections>
+                                        <action selector="modifyFont:" target="140" id="259"/>
+                                    </connections>
+                                </menuItem>
+                                <menuItem isSeparatorItem="YES" id="152"/>
+                                <menuItem title="Kern" id="153">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                    <menu key="submenu" title="Kern" id="154">
+                                        <items>
+                                            <menuItem title="Use Default" id="155">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="useStandardKerning:" target="-1" id="271"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Use None" id="156">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="turnOffKerning:" target="-1" id="272"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Tighten" id="157">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="tightenKerning:" target="-1" id="273"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Loosen" id="158">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="loosenKerning:" target="-1" id="274"/>
+                                                </connections>
+                                            </menuItem>
+                                        </items>
+                                    </menu>
+                                </menuItem>
+                                <menuItem title="Ligature" id="159">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                    <menu key="submenu" title="Ligature" id="160">
+                                        <items>
+                                            <menuItem title="Use Default" id="161">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="useStandardLigatures:" target="-1" id="268"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Use None" id="162">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="turnOffLigatures:" target="-1" id="269"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Use All" id="163">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="useAllLigatures:" target="-1" id="270"/>
+                                                </connections>
+                                            </menuItem>
+                                        </items>
+                                    </menu>
+                                </menuItem>
+                                <menuItem title="Baseline" id="164">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                    <menu key="submenu" title="Baseline" id="165">
+                                        <items>
+                                            <menuItem title="Use Default" id="166">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="unscript:" target="-1" id="263"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Superscript" id="167">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="superscript:" target="-1" id="264"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Subscript" id="168">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="subscript:" target="-1" id="265"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Raise" id="169">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="raiseBaseline:" target="-1" id="266"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Lower" id="170">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="lowerBaseline:" target="-1" id="267"/>
+                                                </connections>
+                                            </menuItem>
+                                        </items>
+                                    </menu>
+                                </menuItem>
+                                <menuItem isSeparatorItem="YES" id="171"/>
+                                <menuItem title="Show Colors" keyEquivalent="C" id="172">
+                                    <connections>
+                                        <action selector="orderFrontColorPanel:" target="-1" id="260"/>
+                                    </connections>
+                                </menuItem>
+                                <menuItem isSeparatorItem="YES" id="173"/>
+                                <menuItem title="Copy Style" keyEquivalent="c" id="174">
+                                    <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                    <connections>
+                                        <action selector="copyFont:" target="-1" id="261"/>
+                                    </connections>
+                                </menuItem>
+                                <menuItem title="Paste Style" keyEquivalent="v" id="175">
+                                    <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                    <connections>
+                                        <action selector="pasteFont:" target="-1" id="262"/>
+                                    </connections>
+                                </menuItem>
+                            </items>
+                        </menu>
+                    </menuItem>
+                    <menuItem title="Text" id="176">
+                        <modifierMask key="keyEquivalentModifierMask"/>
+                        <menu key="submenu" title="Text" id="177">
+                            <items>
+                                <menuItem title="Align Left" keyEquivalent="{" id="178">
+                                    <connections>
+                                        <action selector="alignLeft:" target="-1" id="283"/>
+                                    </connections>
+                                </menuItem>
+                                <menuItem title="Center" keyEquivalent="|" id="179">
+                                    <connections>
+                                        <action selector="alignCenter:" target="-1" id="284"/>
+                                    </connections>
+                                </menuItem>
+                                <menuItem title="Justify" id="180">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                    <connections>
+                                        <action selector="alignJustified:" target="-1" id="285"/>
+                                    </connections>
+                                </menuItem>
+                                <menuItem title="Align Right" keyEquivalent="}" id="181">
+                                    <connections>
+                                        <action selector="alignRight:" target="-1" id="286"/>
+                                    </connections>
+                                </menuItem>
+                                <menuItem isSeparatorItem="YES" id="182"/>
+                                <menuItem title="Writing Direction" id="183">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                    <menu key="submenu" title="Writing Direction" id="184">
+                                        <items>
+                                            <menuItem title="Paragraph" enabled="NO" id="185">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem id="186">
+                                                <string key="title">	Default</string>
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="makeBaseWritingDirectionNatural:" target="-1" id="290"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem id="187">
+                                                <string key="title">	Left to Right</string>
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="makeBaseWritingDirectionLeftToRight:" target="-1" id="291"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem id="188">
+                                                <string key="title">	Right to Left</string>
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="makeBaseWritingDirectionRightToLeft:" target="-1" id="292"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem isSeparatorItem="YES" id="189"/>
+                                            <menuItem title="Selection" enabled="NO" id="190">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem id="191">
+                                                <string key="title">	Default</string>
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="makeTextWritingDirectionNatural:" target="-1" id="293"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem id="192">
+                                                <string key="title">	Left to Right</string>
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="makeTextWritingDirectionLeftToRight:" target="-1" id="294"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem id="193">
+                                                <string key="title">	Right to Left</string>
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="makeTextWritingDirectionRightToLeft:" target="-1" id="295"/>
+                                                </connections>
+                                            </menuItem>
+                                        </items>
+                                    </menu>
+                                </menuItem>
+                                <menuItem isSeparatorItem="YES" id="194"/>
+                                <menuItem title="Show Ruler" id="195">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                    <connections>
+                                        <action selector="toggleRuler:" target="-1" id="287"/>
+                                    </connections>
+                                </menuItem>
+                                <menuItem title="Copy Ruler" keyEquivalent="c" id="196">
+                                    <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
+                                    <connections>
+                                        <action selector="copyRuler:" target="-1" id="288"/>
+                                    </connections>
+                                </menuItem>
+                                <menuItem title="Paste Ruler" keyEquivalent="v" id="197">
+                                    <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
+                                    <connections>
+                                        <action selector="pasteRuler:" target="-1" id="289"/>
+                                    </connections>
+                                </menuItem>
+                            </items>
+                        </menu>
+                    </menuItem>
+                </items>
+            </menu>
+        </menuItem>
+        <menuItem title="Repository" id="198">
+            <modifierMask key="keyEquivalentModifierMask"/>
+            <menu key="submenu" title="Repository" id="199">
+                <items>
+                    <menuItem title="Item 1" id="200">
+                        <modifierMask key="keyEquivalentModifierMask"/>
+                    </menuItem>
+                    <menuItem title="Item 2" id="201">
+                        <modifierMask key="keyEquivalentModifierMask"/>
+                    </menuItem>
+                    <menuItem title="Item 3" id="202">
+                        <modifierMask key="keyEquivalentModifierMask"/>
+                    </menuItem>
+                </items>
+            </menu>
+        </menuItem>
+        <menuItem title="Save" keyEquivalent="s" id="203">
+            <connections>
+                <action selector="saveDocument:" target="-1" id="221"/>
+            </connections>
+        </menuItem>
+        <menuItem title="Save As…" keyEquivalent="S" id="204">
+            <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+            <connections>
+                <action selector="saveDocumentAs:" target="-1" id="222"/>
+            </connections>
+        </menuItem>
+        <menuItem title="Revert to Saved" id="205">
+            <modifierMask key="keyEquivalentModifierMask"/>
+            <connections>
+                <action selector="revertDocumentToSaved:" target="-1" id="224"/>
+            </connections>
+        </menuItem>
+        <menuItem title="Show Toolbar" keyEquivalent="t" id="206">
+            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+            <connections>
+                <action selector="toggleToolbarShown:" target="-1" id="249"/>
+            </connections>
+        </menuItem>
+        <userDefaultsController representsSharedInstance="YES" id="207"/>
+        <menu id="208">
+            <items>
+                <menuItem title="Next Item" keyEquivalent="n" id="209">
+                    <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                    <connections>
+                        <action selector="selectNext:" target="-1" id="321"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Previous Item" keyEquivalent="p" id="210">
+                    <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                    <connections>
+                        <action selector="selectPrevious:" target="-1" id="310"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Default Action" id="211">
+                    <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                    <connections>
+                        <action selector="defaultAction:" target="-1" id="333"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+    </objects>
+</document>
