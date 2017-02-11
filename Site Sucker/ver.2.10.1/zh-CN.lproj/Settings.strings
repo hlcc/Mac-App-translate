@@ -1,0 +1,405 @@
+
+/* Class = "NSWindow"; title = "Settings"; ObjectID = "5"; */
+"5.title" = "设置";
+
+/* Class = "NSMenuItem"; title = "Allow All File Types"; ObjectID = "593"; */
+"593.title" = "允许所有文件类型";
+
+/* Class = "NSMenuItem"; title = "Allow Specified File Types"; ObjectID = "594"; */
+"594.title" = "允许指定的文件类型";
+
+/* Class = "NSMenuItem"; title = "Disallow Specified File Types"; ObjectID = "595"; */
+"595.title" = "禁用指定的文件类型";
+
+/* Class = "NSTabViewItem"; label = "Exclude"; ObjectID = "897"; */
+"897.label" = "排除";
+
+/* Class = "NSTabViewItem"; label = "Include"; ObjectID = "899"; */
+"899.label" = "包含";
+
+/* Class = "NSMenuItem"; title = "None"; ObjectID = "1731"; */
+"1731.title" = "无";
+
+/* Class = "NSMenuItem"; title = "Delete After Analysis"; ObjectID = "1732"; */
+"1732.title" = "分析后删除";
+
+/* Class = "NSMenuItem"; title = "Localize"; ObjectID = "1733"; */
+"1733.title" = "本地化";
+
+/* Class = "NSMenuItem"; title = "With Newer"; ObjectID = "1737"; */
+"1737.title" = "替换较新文件";
+
+/* Class = "NSMenuItem"; title = "Always"; ObjectID = "1738"; */
+"1738.title" = "总是";
+
+/* Class = "NSMenuItem"; title = "Never"; ObjectID = "1739"; */
+"1739.title" = "从不";
+
+/* Class = "NSMenuItem"; title = "Subdomains"; ObjectID = "1744"; */
+"1744.title" = "子域";
+
+/* Class = "NSMenuItem"; title = "Host"; ObjectID = "1745"; */
+"1745.title" = "主机";
+
+/* Class = "NSMenuItem"; title = "None"; ObjectID = "1746"; */
+"1746.title" = "无";
+
+/* Class = "NSMenuItem"; title = "Path Settings"; ObjectID = "1747"; */
+"1747.title" = "路径设置";
+
+/* Class = "NSMenuItem"; title = "Directory"; ObjectID = "1748"; */
+"1748.title" = "目录";
+
+/* Class = "NSButtonCell"; title = "OK"; ObjectID = "1916"; */
+"1916.title" = "确定";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "1917"; */
+"1917.title" = "取消";
+
+/* Class = "NSTextFieldCell"; title = "Destination Folder:"; ObjectID = "1921"; */
+"1921.title" = "目标文件夹:";
+
+/* Class = "NSTextFieldCell"; title = "File Replacement:"; ObjectID = "1923"; */
+"1923.title" = "替换文件:";
+
+/* Class = "NSTextFieldCell"; title = "Path Constraint:"; ObjectID = "1924"; */
+"1924.title" = "路径约束:";
+
+/* Class = "NSTextFieldCell"; title = "File Modification:"; ObjectID = "1926"; */
+"1926.title" = "文件修改:";
+
+/* Class = "NSButtonCell"; title = "Suppress Login Dialog"; ObjectID = "1927"; */
+"1927.title" = "禁止登录对话框";
+
+/* Class = "NSButtonCell"; title = "Ignore Robot Exclusions"; ObjectID = "1928"; */
+"1928.title" = "忽略机器人排除";
+
+/* Class = "NSButtonCell"; title = "Images"; ObjectID = "1933"; */
+"1933.title" = "图片";
+
+/* Class = "NSButtonCell"; title = "Audio"; ObjectID = "1934"; */
+"1934.title" = "视频";
+
+/* Class = "NSButtonCell"; title = "Video"; ObjectID = "1935"; */
+"1935.title" = "音频";
+
+/* Class = "NSButtonCell"; title = "Archives"; ObjectID = "1936"; */
+"1936.title" = "压缩包";
+
+/* Class = "NSButtonCell"; title = "Custom Types"; ObjectID = "1937"; */
+"1937.title" = "自定义类型";
+
+/* Class = "NSTextFieldCell"; title = "Enter absolute URLs or regular expression patterns"; ObjectID = "1941"; */
+"1941.title" = "输入绝对URL或正则表达式模式";
+
+/* Class = "NSButtonCell"; title = "Maximum File Size:"; ObjectID = "1963"; */
+"1963.title" = "文件大小限制:";
+
+/* Class = "NSButtonCell"; title = "Maximum Number of Levels:"; ObjectID = "1964"; */
+"1964.title" = "抓取层级限制:";
+
+/* Class = "NSButtonCell"; title = "Maximum Number of Files:"; ObjectID = "1968"; */
+"1968.title" = "文件数量限制:";
+
+/* Class = "NSButtonCell"; title = "Minimum File Size:"; ObjectID = "1969"; */
+"1969.title" = "最小文件限制:";
+
+/* Class = "NSTextFieldCell"; title = "KB"; ObjectID = "1971"; */
+"1971.title" = "KB";
+
+/* Class = "NSTextFieldCell"; title = "KB"; ObjectID = "1972"; */
+"1972.title" = "KB";
+
+/* Class = "NSButtonCell"; title = "Minimum Image Size:"; ObjectID = "1973"; */
+"1973.title" = "最小图片尺寸:";
+
+/* Class = "NSTextFieldCell"; title = "% Screen Area"; ObjectID = "1975"; */
+"1975.title" = "% 屏幕尺寸";
+
+/* Class = "NSButtonCell"; title = "Log Warnings"; ObjectID = "1976"; */
+"1976.title" = "警告日志";
+
+/* Class = "NSButtonCell"; title = "Log Errors"; ObjectID = "1978"; */
+"1978.title" = "错误日志";
+
+/* Class = "NSButtonCell"; title = "Log Download History"; ObjectID = "1979"; */
+"1979.title" = "下载日志";
+
+/* Class = "NSButtonCell"; title = "Log Final Status"; ObjectID = "1980"; */
+"1980.title" = "记录结果";
+
+/* Class = "NSTabViewItem"; label = "Filter"; ObjectID = "2013"; */
+"2013.label" = "过滤";
+
+/* Class = "NSTabViewItem"; label = "Custom Types"; ObjectID = "2014"; */
+"2014.label" = "自定义类型";
+
+/* Class = "NSTabViewItem"; label = "HTML Types"; ObjectID = "2017"; */
+"2017.label" = "网页类型";
+
+/* Class = "NSTableColumn"; headerCell.title = "On"; ObjectID = "2025"; */
+"2025.headerCell.title" = "启用";
+
+/* Class = "NSTableColumn"; headerCell.title = "Media Type"; ObjectID = "2026"; */
+"2026.headerCell.title" = "媒体类型";
+
+/* Class = "NSTableColumn"; headerCell.title = "Media Type"; ObjectID = "2057"; */
+"2057.headerCell.title" = "媒体类型";
+
+/* Class = "NSTableColumn"; headerCell.title = "On"; ObjectID = "2058"; */
+"2058.headerCell.title" = "开";
+
+/* Class = "NSTextFieldCell"; title = "application/zip, application/tar, application/stuffit, ..."; ObjectID = "2072"; */
+"2072.title" = "application/zip, application/tar, application/stuffit, ...";
+
+/* Class = "NSTextFieldCell"; title = "audio/aiff, audio/mp3, audio/wav, audio/au, ..."; ObjectID = "2074"; */
+"2074.title" = "audio/aiff, audio/mp3, audio/wav, audio/au, ...";
+
+/* Class = "NSTextFieldCell"; title = "image/jpeg, image/gif, image/tiff, image/png, ..."; ObjectID = "2076"; */
+"2076.title" = "image/jpeg, image/gif, image/tiff, image/png, ...";
+
+/* Class = "NSTextFieldCell"; title = "video/avi, video/mpg, video/x-ms-asf, ..."; ObjectID = "2078"; */
+"2078.title" = "video/avi, video/mpg, video/x-ms-asf, ...";
+
+/* Class = "NSTextFieldCell"; title = "as specified under the Custom Types tab"; ObjectID = "2080"; */
+"2080.title" = "如“自定义类型”选项卡下所指定";
+
+/* Class = "NSButtonCell"; title = "Log Media Types"; ObjectID = "2088"; */
+"2088.title" = "媒体日志";
+
+/* Class = "NSButtonCell"; title = "Ask For Destination"; ObjectID = "2091"; */
+"2091.title" = "询问保存路径";
+
+/* Class = "NSMenuItem"; title = "Set Destination Folder…"; ObjectID = "2113"; */
+"2113.title" = "设置目标文件夹…";
+
+/* Class = "NSMenuItem"; title = "Folder"; ObjectID = "2114"; */
+"2114.title" = "文件夹";
+
+/* Class = "NSTableColumn"; headerCell.title = "Path or Pattern"; ObjectID = "03j-4A-pPe"; */
+"03j-4A-pPe.headerCell.title" = "路径或模式";
+
+/* Class = "NSSegmentedCell"; 1sg-hf-knQ.ibShadowedToolTips[0] = "Add"; ObjectID = "1sg-hf-knQ"; */
+"1sg-hf-knQ.ibShadowedToolTips[0]" = "添加";
+
+/* Class = "NSSegmentedCell"; 1sg-hf-knQ.ibShadowedToolTips[1] = "Delete"; ObjectID = "1sg-hf-knQ"; */
+"1sg-hf-knQ.ibShadowedToolTips[1]" = "删除";
+
+/* Class = "NSTableColumn"; headerCell.title = "Substitution Template"; ObjectID = "2Ix-fc-NKY"; */
+"2Ix-fc-NKY.headerCell.title" = "替换规则";
+
+/* Class = "NSTextFieldCell"; title = "Enter regular expressions"; ObjectID = "2nz-c0-741"; */
+"2nz-c0-741.title" = "输入正则表达式";
+
+/* Class = "NSTextFieldCell"; title = "Delay:"; ObjectID = "3g9-bT-150"; */
+"3g9-bT-150.title" = "延迟:";
+
+/* Class = "NSButtonCell"; title = "Open Scripts Folder"; ObjectID = "3nm-iB-0W8"; */
+"3nm-iB-0W8.title" = "打开脚本文件夹";
+
+/* Class = "NSTextFieldCell"; title = "seconds"; ObjectID = "5f7-Qc-6mK"; */
+"5f7-Qc-6mK.title" = "秒";
+
+/* Class = "NSSegmentedCell"; 6rJ-Fw-Q81.ibShadowedToolTips[0] = "General"; ObjectID = "6rJ-Fw-Q81"; */
+"6rJ-Fw-Q81.ibShadowedToolTips[0]" = "一般";
+
+/* Class = "NSSegmentedCell"; 6rJ-Fw-Q81.ibShadowedToolTips[1] = "Log"; ObjectID = "6rJ-Fw-Q81"; */
+"6rJ-Fw-Q81.ibShadowedToolTips[1]" = "日志";
+
+/* Class = "NSSegmentedCell"; 6rJ-Fw-Q81.ibShadowedToolTips[2] = "Limit"; ObjectID = "6rJ-Fw-Q81"; */
+"6rJ-Fw-Q81.ibShadowedToolTips[2]" = "限制";
+
+/* Class = "NSSegmentedCell"; 6rJ-Fw-Q81.ibShadowedToolTips[3] = "Request"; ObjectID = "6rJ-Fw-Q81"; */
+"6rJ-Fw-Q81.ibShadowedToolTips[3]" = "请求";
+
+/* Class = "NSSegmentedCell"; 6rJ-Fw-Q81.ibShadowedToolTips[4] = "Path"; ObjectID = "6rJ-Fw-Q81"; */
+"6rJ-Fw-Q81.ibShadowedToolTips[4]" = "路径";
+
+/* Class = "NSSegmentedCell"; 6rJ-Fw-Q81.ibShadowedToolTips[5] = "Webpage"; ObjectID = "6rJ-Fw-Q81"; */
+"6rJ-Fw-Q81.ibShadowedToolTips[5]" = "网页";
+
+/* Class = "NSSegmentedCell"; 6rJ-Fw-Q81.ibShadowedToolTips[6] = "File Type"; ObjectID = "6rJ-Fw-Q81"; */
+"6rJ-Fw-Q81.ibShadowedToolTips[6]" = "文件类型";
+
+/* Class = "NSSegmentedCell"; 6rJ-Fw-Q81.ibShadowedToolTips[7] = "Parameter"; ObjectID = "6rJ-Fw-Q81"; */
+"6rJ-Fw-Q81.ibShadowedToolTips[7]" = "参数";
+
+/* Class = "NSSegmentedCell"; 6rJ-Fw-Q81.ibShadowedToolTips[8] = "Script"; ObjectID = "6rJ-Fw-Q81"; */
+"6rJ-Fw-Q81.ibShadowedToolTips[8]" = "脚本";
+
+/* Class = "NSMenuItem"; title = "1 minute"; ObjectID = "8Em-RI-4uv"; */
+"8Em-RI-4uv.title" = "1 分钟";
+
+/* Class = "NSMenuItem"; title = "8 minutes"; ObjectID = "8ub-uP-LK5"; */
+"8ub-uP-LK5.title" = "8 分钟";
+
+/* Class = "NSMenuItem"; title = "2"; ObjectID = "9bS-yY-Nq6"; */
+"9bS-yY-Nq6.title" = "2";
+
+/* Class = "NSMenuItem"; title = "4 minutes"; ObjectID = "DJG-0F-q7J"; */
+"DJG-0F-q7J.title" = "4 分钟";
+
+/* Class = "NSMenuItem"; title = "None"; ObjectID = "DgQ-Y5-g5B"; */
+"DgQ-Y5-g5B.title" = "无";
+
+/* Class = "NSButtonCell"; title = "Check All Links"; ObjectID = "E3V-OU-fj8"; */
+"E3V-OU-fj8.title" = "检查所有链接";
+
+/* Class = "NSTableColumn"; headerCell.title = "Search Pattern"; ObjectID = "EO2-ji-zod"; */
+"EO2-ji-zod.headerCell.title" = "搜索格式";
+
+/* Class = "NSButtonCell"; title = "Download Using Web Views"; ObjectID = "EPu-jn-j5a"; */
+"EPu-jn-j5a.title" = "用网页浏览下载";
+
+/* Class = "NSSegmentedCell"; JAP-Mk-X6O.ibShadowedToolTips[0] = "Add"; ObjectID = "JAP-Mk-X6O"; */
+"JAP-Mk-X6O.ibShadowedToolTips[0]" = "添加";
+
+/* Class = "NSSegmentedCell"; JAP-Mk-X6O.ibShadowedToolTips[1] = "Delete"; ObjectID = "JAP-Mk-X6O"; */
+"JAP-Mk-X6O.ibShadowedToolTips[1]" = "删除";
+
+/* Class = "NSTextFieldCell"; title = "Enter regular expressions"; ObjectID = "KCc-Pc-YcM"; */
+"KCc-Pc-YcM.title" = "输入正则表达式";
+
+/* Class = "NSMenuItem"; title = "1"; ObjectID = "LCo-ol-YKi"; */
+"LCo-ol-YKi.title" = "1";
+
+/* Class = "NSMenuItem"; title = "SiteSucker"; ObjectID = "M2N-vK-4C7"; */
+"M2N-vK-4C7.title" = "自动";
+
+/* Class = "NSMenuItem"; title = "3"; ObjectID = "MOn-3T-hoW"; */
+"MOn-3T-hoW.title" = "3";
+
+/* Class = "NSTabViewItem"; label = "Replace"; ObjectID = "Rcl-i3-o4C"; */
+"Rcl-i3-o4C.label" = "替换";
+
+/* Class = "NSTextFieldCell"; title = "seconds"; ObjectID = "S8G-y9-Mq4"; */
+"S8G-y9-Mq4.title" = "秒";
+
+/* Class = "NSTextFieldCell"; title = "Post-analysis Script:"; ObjectID = "TR7-1X-ZHz"; */
+"TR7-1X-ZHz.title" = "后分析脚本:";
+
+/* Class = "NSMenuItem"; title = "5"; ObjectID = "U7d-EF-sr0"; */
+"U7d-EF-sr0.title" = "5";
+
+/* Class = "NSTextFieldCell"; title = "Attempts:"; ObjectID = "U9z-gb-pbN"; */
+"U9z-gb-pbN.title" = "尝试:";
+
+/* Class = "NSTableColumn"; headerCell.title = "Custom Data Attribute Name"; ObjectID = "UMG-MQ-yeX"; */
+"UMG-MQ-yeX.headerCell.title" = "自定义数据属性名称";
+
+/* Class = "NSTextFieldCell"; title = "Text Encoding:"; ObjectID = "UhP-Ge-Hp7"; */
+"UhP-Ge-Hp7.title" = "文本编码:";
+
+/* Class = "NSSegmentedCell"; Vv5-ar-LJY.ibShadowedToolTips[0] = "Add"; ObjectID = "Vv5-ar-LJY"; */
+"Vv5-ar-LJY.ibShadowedToolTips[0]" = "添加";
+
+/* Class = "NSSegmentedCell"; Vv5-ar-LJY.ibShadowedToolTips[1] = "Delete"; ObjectID = "Vv5-ar-LJY"; */
+"Vv5-ar-LJY.ibShadowedToolTips[1]" = "删除";
+
+/* Class = "NSButtonCell"; title = "Always Download HTML and CSS"; ObjectID = "Xqq-Ji-rzF"; */
+"Xqq-Ji-rzF.title" = "始终下载HTML和CSS";
+
+/* Class = "NSTextFieldCell"; title = "Link:"; ObjectID = "Xtc-Ni-eA5"; */
+"Xtc-Ni-eA5.title" = "链接:";
+
+/* Class = "NSTextFieldCell"; title = "Pre-analysis Script:"; ObjectID = "Znb-xG-3bW"; */
+"Znb-xG-3bW.title" = "预分析脚本:";
+
+/* Class = "NSTableColumn"; headerCell.title = "Regex"; ObjectID = "ajO-ce-qUd"; */
+"ajO-ce-qUd.headerCell.title" = "正则表达式";
+
+/* Class = "NSMenuItem"; title = "4"; ObjectID = "cDY-jD-cq5"; */
+"cDY-jD-cq5.title" = "4";
+
+/* Class = "NSSegmentedCell"; cH6-Uw-ha6.ibShadowedToolTips[0] = "Add"; ObjectID = "cH6-Uw-ha6"; */
+"cH6-Uw-ha6.ibShadowedToolTips[0]" = "添加";
+
+/* Class = "NSSegmentedCell"; cH6-Uw-ha6.ibShadowedToolTips[1] = "Delete"; ObjectID = "cH6-Uw-ha6"; */
+"cH6-Uw-ha6.ibShadowedToolTips[1]" = "删除";
+
+/* Class = "NSTextFieldCell"; title = "Enter absolute URLs or regular expression patterns"; ObjectID = "cph-0V-Q6B"; */
+"cph-0V-Q6B.title" = "请输入绝对URL或正则表达式";
+
+/* Class = "NSTableColumn"; headerCell.title = "Regex"; ObjectID = "duc-gh-hFs"; */
+"duc-gh-hFs.headerCell.title" = "正则表达式";
+
+/* Class = "NSMenuItem"; title = "None"; ObjectID = "fZk-HO-itZ"; */
+"fZk-HO-itZ.title" = "无";
+
+/* Class = "NSTableColumn"; headerCell.title = "Search Pattern"; ObjectID = "fvf-EH-gdy"; */
+"fvf-EH-gdy.headerCell.title" = "搜索格式";
+
+/* Class = "NSTextFieldCell"; title = "Enter data attributes that should be scanned for URLs"; ObjectID = "gEg-Hx-0t6"; */
+"gEg-Hx-0t6.title" = "请输入要扫描URL的属性值";
+
+/* Class = "NSButtonCell"; title = "Scan Comments for URLs"; ObjectID = "gXP-pE-4se"; */
+"gXP-pE-4se.title" = "扫描URL的注释";
+
+/* Class = "NSSegmentedCell"; haz-0q-681.ibShadowedToolTips[0] = "Add"; ObjectID = "haz-0q-681"; */
+"haz-0q-681.ibShadowedToolTips[0]" = "添加";
+
+/* Class = "NSSegmentedCell"; haz-0q-681.ibShadowedToolTips[1] = "Delete"; ObjectID = "haz-0q-681"; */
+"haz-0q-681.ibShadowedToolTips[1]" = "删除";
+
+/* Class = "NSButtonCell"; title = "Only Follow Image Links"; ObjectID = "hhD-sy-WsU"; */
+"hhD-sy-WsU.title" = "仅图像链接";
+
+/* Class = "NSTableColumn"; headerCell.title = "URL Template"; ObjectID = "kt7-bS-qj7"; */
+"kt7-bS-qj7.headerCell.title" = "网址规则";
+
+/* Class = "NSSegmentedCell"; l1p-ni-ZWH.ibShadowedToolTips[0] = "Add"; ObjectID = "l1p-ni-ZWH"; */
+"l1p-ni-ZWH.ibShadowedToolTips[0]" = "添加";
+
+/* Class = "NSSegmentedCell"; l1p-ni-ZWH.ibShadowedToolTips[1] = "Delete"; ObjectID = "l1p-ni-ZWH"; */
+"l1p-ni-ZWH.ibShadowedToolTips[1]" = "删除";
+
+/* Class = "NSTabViewItem"; label = "Attributes"; ObjectID = "lqe-Q8-Nhc"; */
+"lqe-Q8-Nhc.label" = "属性";
+
+/* Class = "NSMenuItem"; title = "30 seconds"; ObjectID = "mkP-K8-6Su"; */
+"mkP-K8-6Su.title" = "30 秒";
+
+/* Class = "NSTableColumn"; headerCell.title = "Path or Pattern"; ObjectID = "mng-Yc-C8b"; */
+"mng-Yc-C8b.headerCell.title" = "路径或表达式";
+
+/* Class = "NSTabViewItem"; label = "Options"; ObjectID = "na5-id-MHS"; */
+"na5-id-MHS.label" = "选项";
+
+/* Class = "NSTextFieldCell"; title = "Timeout:"; ObjectID = "nj7-Vo-Pak"; */
+"nj7-Vo-Pak.title" = "超时:";
+
+/* Class = "NSMenuItem"; title = "15 seconds"; ObjectID = "pHB-fj-WZg"; */
+"pHB-fj-WZg.title" = "15 秒";
+
+/* Class = "NSTabViewItem"; label = "Patterns"; ObjectID = "pLq-mT-2fs"; */
+"pLq-mT-2fs.label" = "模式";
+
+/* Class = "NSTextFieldCell"; title = "Path:"; ObjectID = "tmg-Ui-Pd0"; */
+"tmg-Ui-Pd0.title" = "路径:";
+
+/* Class = "NSSegmentedCell"; tnm-Z2-stG.ibShadowedToolTips[0] = "Add"; ObjectID = "tnm-Z2-stG"; */
+"tnm-Z2-stG.ibShadowedToolTips[0]" = "添加";
+
+/* Class = "NSSegmentedCell"; tnm-Z2-stG.ibShadowedToolTips[1] = "Delete"; ObjectID = "tnm-Z2-stG"; */
+"tnm-Z2-stG.ibShadowedToolTips[1]" = "删除";
+
+/* Class = "NSTextFieldCell"; title = "Identity:"; ObjectID = "vdR-jD-Te0"; */
+"vdR-jD-Te0.title" = "识别:";
+
+/* Class = "NSButtonCell"; title = "Save As User Defaults"; ObjectID = "waO-k8-2jw"; */
+"waO-k8-2jw.title" = "设为默认";
+
+/* Class = "NSTextFieldCell"; title = "Save Delay:"; ObjectID = "wal-or-b94"; */
+"wal-or-b94.title" = "保存延迟:";
+
+/* Class = "NSButtonCell"; title = "Include Supporting Files"; ObjectID = "x88-f9-cBJ"; */
+"x88-f9-cBJ.title" = "包含支持文件";
+
+/* Class = "NSMenuItem"; title = "2 minutes"; ObjectID = "y8A-wJ-8vl"; */
+"y8A-wJ-8vl.title" = "2 分钟";
+
+/* Class = "NSMenuItem"; title = "None"; ObjectID = "z3M-Vx-Ub0"; */
+"z3M-Vx-Ub0.title" = "无";
+
+/* Class = "NSTableColumn"; headerCell.title = "Substitution Template"; ObjectID = "zij-Le-07G"; */
+"zij-Le-07G.headerCell.title" = "替换规则";

@@ -1,0 +1,42 @@
+
+/* Class = "NSWindow"; title = "Preferences"; ObjectID = "5"; */
+"5.title" = "偏好设置";
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "73"; */
+"73.title" = "其他视图";
+
+/* Class = "NSMenuItem"; title = "No Bookmarks"; ObjectID = "75"; */
+"75.title" = "没有书签";
+
+/* Class = "NSTextFieldCell"; title = "Connections for new documents:"; ObjectID = "113"; */
+"113.title" = "连接为新文档:";
+
+/* Class = "NSButtonCell"; title = "Clear document changes"; ObjectID = "114"; */
+"114.title" = "清除文件的修改";
+
+/* Class = "NSTextFieldCell"; title = "When downloads are done:"; ObjectID = "116"; */
+"116.title" = "下载完成后:";
+
+/* Class = "NSButtonCell"; title = "Delete robots.txt"; ObjectID = "117"; */
+"117.title" = "删除 robots.txt";
+
+/* Class = "NSTextFieldCell"; title = "Source of bookmarks:"; ObjectID = "120"; */
+"120.title" = "书签来源:";
+
+/* Class = "NSButtonCell"; title = "Identities…"; ObjectID = "125"; */
+"125.title" = "浏览器识别…";
+
+/* Class = "NSButtonCell"; title = "Settings…"; ObjectID = "M4I-1c-pd2"; */
+"M4I-1c-pd2.title" = "设置…";
+
+/* Class = "NSButtonCell"; title = "Show all"; ObjectID = "a7q-ge-rqp"; */
+"a7q-ge-rqp.title" = "全部显示";
+
+/* Class = "NSTextFieldCell"; title = "When dragging to the URL field:"; ObjectID = "g7c-94-oLn"; */
+"g7c-94-oLn.title" = "拖放链接:";
+
+/* Class = "NSTextFieldCell"; title = "Warning alerts:"; ObjectID = "vdU-Xz-Wc8"; */
+"vdU-Xz-Wc8.title" = "警告提示:";
+
+/* Class = "NSButtonCell"; title = "Drag triggers download"; ObjectID = "xEc-21-54K"; */
+"xEc-21-54K.title" = "拖放链接至地址栏触发下载";

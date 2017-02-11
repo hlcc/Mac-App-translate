@@ -1,0 +1,24 @@
+
+/* Class = "NSWindow"; title = "Log In"; ObjectID = "5"; */
+"5.title" = "登录";
+
+/* Class = "NSTextFieldCell"; title = "To view this page, you must log in to this area on www.server.com:"; ObjectID = "100010"; */
+"100010.title" = "要查看此页面，您必须在www.server.com上登录此区域:";
+
+/* Class = "NSTextFieldCell"; title = "Your password will be sent unencrypted."; ObjectID = "100011"; */
+"100011.title" = "您的密码将以未加密的方式发送。";
+
+/* Class = "NSButtonCell"; title = "Log In"; ObjectID = "100012"; */
+"100012.title" = "登录";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "100013"; */
+"100013.title" = "取消";
+
+/* Class = "NSTextFieldCell"; title = "Name:"; ObjectID = "100016"; */
+"100016.title" = "帐号:";
+
+/* Class = "NSTextFieldCell"; title = "Password:"; ObjectID = "100017"; */
+"100017.title" = "密码:";
+
+/* Class = "NSButtonCell"; title = "Remember this password in my keychain"; ObjectID = "100039"; */
+"100039.title" = "在我的钥匙串中记住此密码";

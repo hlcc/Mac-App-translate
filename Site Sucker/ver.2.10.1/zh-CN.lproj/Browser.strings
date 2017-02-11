@@ -1,0 +1,15 @@
+
+/* Class = "NSWindow"; title = "Browser"; ObjectID = "3"; */
+"3.title" = "浏览器";
+
+/* Class = "NSButtonCell"; title = "Download"; ObjectID = "9"; */
+"9.title" = "下载";
+
+/* Class = "NSButtonCell"; title = "Close"; ObjectID = "10"; */
+"10.title" = "关闭";
+
+/* Class = "NSSegmentedCell"; 11.ibShadowedToolTips[0] = "Back"; ObjectID = "11"; */
+"11.ibShadowedToolTips[0]" = "返回";
+
+/* Class = "NSSegmentedCell"; 11.ibShadowedToolTips[1] = "Forward"; ObjectID = "11"; */
+"11.ibShadowedToolTips[1]" = "前进";

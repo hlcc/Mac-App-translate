@@ -1,0 +1,33 @@
+
+/* Class = "NSTableColumn"; headerCell.title = "Queue"; ObjectID = "98"; */
+"98.headerCell.title" = "队列";
+
+/* Class = "NSTableColumn"; headerCell.title = "Progress"; ObjectID = "0tB-65-dSC"; */
+"0tB-65-dSC.headerCell.title" = "进度";
+
+/* Class = "NSTableColumn"; headerCell.title = "Files Remaining"; ObjectID = "0wF-cT-Mdb"; */
+"0wF-cT-Mdb.headerCell.title" = "待下载";
+
+/* Class = "NSTextFieldCell"; placeholderString = "URL"; ObjectID = "2kR-9j-fJg"; */
+"2kR-9j-fJg.placeholderString" = "http://";
+
+/* Class = "NSTableColumn"; headerCell.title = "URL"; ObjectID = "5I8-lI-Kxs"; */
+"5I8-lI-Kxs.headerCell.title" = "网址";
+
+/* Class = "NSTableColumn"; headerCell.title = "Skip"; ObjectID = "UVV-ST-tPd"; */
+"UVV-ST-tPd.headerCell.title" = "跳过";
+
+/* Class = "NSTableColumn"; headerToolTip = ""; ObjectID = "UVV-ST-tPd"; */
+"UVV-ST-tPd.headerToolTip" = "";
+
+/* Class = "NSTableColumn"; headerCell.title = "Errors"; ObjectID = "YyI-iG-eyA"; */
+"YyI-iG-eyA.headerCell.title" = "错误";
+
+/* Class = "NSTableColumn"; headerCell.title = "Files Downloaded"; ObjectID = "eoB-tQ-EHq"; */
+"eoB-tQ-EHq.headerCell.title" = "已下载";
+
+/* Class = "NSTableColumn"; headerCell.title = "Level"; ObjectID = "yw6-Yc-RWW"; */
+"yw6-Yc-RWW.headerCell.title" = "层级";
+
+/* Class = "NSTableColumn"; headerCell.title = "Status"; ObjectID = "zXk-4q-MFt"; */
+"zXk-4q-MFt.headerCell.title" = "状态";

@@ -1,0 +1,15 @@
+
+/* Class = "NSWindow"; title = "Settings Manager"; ObjectID = "1"; */
+"1.title" = "设置管理";
+
+/* Class = "NSTableColumn"; headerCell.title = "Name"; ObjectID = "8"; */
+"8.headerCell.title" = "名称";
+
+/* Class = "NSButtonCell"; title = "Done"; ObjectID = "baV-XA-3Jy"; */
+"baV-XA-3Jy.title" = "完成";
+
+/* Class = "NSSegmentedCell"; f6c-wT-vyh.ibShadowedToolTips[0] = "Add"; ObjectID = "f6c-wT-vyh"; */
+"f6c-wT-vyh.ibShadowedToolTips[0]" = "添加";
+
+/* Class = "NSSegmentedCell"; f6c-wT-vyh.ibShadowedToolTips[1] = "Delete"; ObjectID = "f6c-wT-vyh"; */
+"f6c-wT-vyh.ibShadowedToolTips[1]" = "删除";

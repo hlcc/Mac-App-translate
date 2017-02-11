@@ -1,0 +1,21 @@
+
+/* Class = "NSTableColumn"; headerCell.title = "Name"; ObjectID = "8"; */
+"8.headerCell.title" = "名称";
+
+/* Class = "NSTableColumn"; headerCell.title = "Version"; ObjectID = "9"; */
+"9.headerCell.title" = "版本";
+
+/* Class = "NSButtonCell"; title = "Done"; ObjectID = "17"; */
+"17.title" = "完成";
+
+/* Class = "NSTableColumn"; headerCell.title = "Platform"; ObjectID = "18"; */
+"18.headerCell.title" = "平台";
+
+/* Class = "NSTableColumn"; headerCell.title = "User Agent String"; ObjectID = "20"; */
+"20.headerCell.title" = "用户代理字符串";
+
+/* Class = "NSSegmentedCell"; 0T4-Bc-i7K.ibShadowedToolTips[0] = "Add"; ObjectID = "0T4-Bc-i7K"; */
+"0T4-Bc-i7K.ibShadowedToolTips[0]" = "添加";
+
+/* Class = "NSSegmentedCell"; 0T4-Bc-i7K.ibShadowedToolTips[1] = "Delete"; ObjectID = "0T4-Bc-i7K"; */
+"0T4-Bc-i7K.ibShadowedToolTips[1]" = "删除";

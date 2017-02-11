@@ -1,0 +1,213 @@
+
+/* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "5"; */
+"5.title" = "全部前置";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "19"; */
+"19.title" = "窗口";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "23"; */
+"23.title" = "最小化";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "24"; */
+"24.title" = "窗口";
+
+/* Class = "NSMenu"; title = "MainMenu"; ObjectID = "29"; */
+"29.title" = "主菜单";
+
+/* Class = "NSMenuItem"; title = "SiteSucker"; ObjectID = "56"; */
+"56.title" = "SiteSucker";
+
+/* Class = "NSMenu"; title = "SiteSucker"; ObjectID = "57"; */
+"57.title" = "SiteSucker";
+
+/* Class = "NSMenuItem"; title = "About SiteSucker"; ObjectID = "58"; */
+"58.title" = "关于 SiteSucker";
+
+/* Class = "NSMenuItem"; title = "Close"; ObjectID = "73"; */
+"73.title" = "关闭";
+
+/* Class = "NSMenu"; title = "File"; ObjectID = "81"; */
+"81.title" = "文件";
+
+/* Class = "NSMenuItem"; title = "New"; ObjectID = "82"; */
+"82.title" = "新建";
+
+/* Class = "NSMenuItem"; title = "File"; ObjectID = "83"; */
+"83.title" = "文件";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "103"; */
+"103.title" = "帮助";
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "106"; */
+"106.title" = "帮助";
+
+/* Class = "NSMenuItem"; title = "SiteSucker Help"; ObjectID = "111"; */
+"111.title" = "SiteSucker 帮助";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "130"; */
+"130.title" = "服务";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "131"; */
+"131.title" = "服务";
+
+/* Class = "NSMenuItem"; title = "Hide SiteSucker"; ObjectID = "134"; */
+"134.title" = "隐藏 SiteSucker";
+
+/* Class = "NSMenuItem"; title = "Quit SiteSucker"; ObjectID = "136"; */
+"136.title" = "退出 SiteSucker";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "145"; */
+"145.title" = "隐藏其他";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "150"; */
+"150.title" = "全部显示";
+
+/* Class = "NSMenuItem"; title = "Copy"; ObjectID = "157"; */
+"157.title" = "拷贝";
+
+/* Class = "NSMenuItem"; title = "Undo"; ObjectID = "158"; */
+"158.title" = "撤消";
+
+/* Class = "NSMenuItem"; title = "Cut"; ObjectID = "160"; */
+"160.title" = "剪切";
+
+/* Class = "NSMenuItem"; title = "Edit"; ObjectID = "163"; */
+"163.title" = "编辑";
+
+/* Class = "NSMenuItem"; title = "Delete"; ObjectID = "164"; */
+"164.title" = "删除";
+
+/* Class = "NSMenu"; title = "Edit"; ObjectID = "169"; */
+"169.title" = "编辑";
+
+/* Class = "NSMenuItem"; title = "Paste"; ObjectID = "171"; */
+"171.title" = "粘贴";
+
+/* Class = "NSMenuItem"; title = "Select All"; ObjectID = "172"; */
+"172.title" = "全选";
+
+/* Class = "NSMenuItem"; title = "Redo"; ObjectID = "173"; */
+"173.title" = "重做";
+
+/* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "203"; */
+"203.title" = "缩放";
+
+/* Class = "NSMenuItem"; title = "Control"; ObjectID = "212"; */
+"212.title" = "控制";
+
+/* Class = "NSMenu"; title = "Control"; ObjectID = "213"; */
+"213.title" = "控制";
+
+/* Class = "NSMenuItem"; title = "Download"; ObjectID = "214"; */
+"214.title" = "下载";
+
+/* Class = "NSMenuItem"; title = "Stop"; ObjectID = "215"; */
+"215.title" = "停止";
+
+/* Class = "NSMenuItem"; title = "Open File"; ObjectID = "233"; */
+"233.title" = "打开文件";
+
+/* Class = "NSMenuItem"; title = "Open Log"; ObjectID = "234"; */
+"234.title" = "打开日志";
+
+/* Class = "NSMenuItem"; title = "Open Destination Folder"; ObjectID = "235"; */
+"235.title" = "打开目标文件夹";
+
+/* Class = "NSMenuItem"; title = "Next"; ObjectID = "250"; */
+"250.title" = "下一个";
+
+/* Class = "NSMenuItem"; title = "Pause"; ObjectID = "251"; */
+"251.title" = "暂停";
+
+/* Class = "NSMenuItem"; title = "Stop Analysis"; ObjectID = "252"; */
+"252.title" = "停止分析";
+
+/* Class = "NSMenuItem"; title = "View"; ObjectID = "327"; */
+"327.title" = "查看";
+
+/* Class = "NSMenu"; title = "View"; ObjectID = "328"; */
+"328.title" = "查看";
+
+/* Class = "NSMenuItem"; title = "Show Queue"; ObjectID = "329"; */
+"329.title" = "显示队列";
+
+/* Class = "NSMenuItem"; title = "Hide Toolbar"; ObjectID = "332"; */
+"332.title" = "隐藏工具栏";
+
+/* Class = "NSMenuItem"; title = "Customize Toolbar…"; ObjectID = "333"; */
+"333.title" = "自定义工具栏…";
+
+/* Class = "NSMenuItem"; title = "Open…"; ObjectID = "351"; */
+"351.title" = "打开…";
+
+/* Class = "NSMenuItem"; title = "Save"; ObjectID = "354"; */
+"354.title" = "保存";
+
+/* Class = "NSMenuItem"; title = "Save As…"; ObjectID = "355"; */
+"355.title" = "另存为…";
+
+/* Class = "NSMenuItem"; title = "Add to Queue"; ObjectID = "367"; */
+"367.title" = "添加到队列";
+
+/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "370"; */
+"370.title" = "偏好设置…";
+
+/* Class = "NSMenuItem"; title = "Settings"; ObjectID = "388"; */
+"388.title" = "设置";
+
+/* Class = "NSMenu"; title = "Settings"; ObjectID = "389"; */
+"389.title" = "设置";
+
+/* Class = "NSMenuItem"; title = "Edit Settings…"; ObjectID = "390"; */
+"390.title" = "编辑设置…";
+
+/* Class = "NSMenuItem"; title = "History"; ObjectID = "411"; */
+"411.title" = "历史";
+
+/* Class = "NSMenu"; title = "History"; ObjectID = "412"; */
+"412.title" = "历史";
+
+/* Class = "NSMenuItem"; title = "Clear Menu"; ObjectID = "413"; */
+"413.title" = "清除菜单";
+
+/* Class = "NSMenuItem"; title = "Save As User Defaults"; ObjectID = "440"; */
+"440.title" = "设为默认";
+
+/* Class = "NSMenuItem"; title = "Open Log…"; ObjectID = "459"; */
+"459.title" = "打开日志…";
+
+/* Class = "NSMenuItem"; title = "Open File…"; ObjectID = "467"; */
+"467.title" = "打开文件…";
+
+/* Class = "NSMenuItem"; title = "Factory Defaults"; ObjectID = "481"; */
+"481.title" = "出厂默认值";
+
+/* Class = "NSMenuItem"; title = "User Defaults"; ObjectID = "482"; */
+"482.title" = "用户默认值";
+
+/* Class = "NSMenuItem"; title = "Reset Status"; ObjectID = "491"; */
+"491.title" = "重置状态";
+
+/* Class = "NSMenuItem"; title = "Open Browser"; ObjectID = "506"; */
+"506.title" = "打开浏览器";
+
+/* Class = "NSMenuItem"; title = "Install Bookmarklet…"; ObjectID = "Egc-wP-bAf"; */
+"Egc-wP-bAf.title" = "安装书签…";
+
+/* Class = "NSMenuItem"; title = "Previous Section"; ObjectID = "G9t-mk-Gvo"; */
+"G9t-mk-Gvo.title" = "上一个";
+
+/* Class = "NSMenuItem"; title = "Next Section"; ObjectID = "Onn-oo-WEG"; */
+"Onn-oo-WEG.title" = "下一个";
+
+/* Class = "NSMenuItem"; title = "Enter Full Screen"; ObjectID = "SMe-oG-Mdn"; */
+"SMe-oG-Mdn.title" = "全屏";
+
+/* Class = "NSMenuItem"; title = "None"; ObjectID = "cDS-1P-MCk"; */
+"cDS-1P-MCk.title" = "无";
+
+/* Class = "NSMenuItem"; title = "Open Downloads"; ObjectID = "eWS-I2-Tbl"; */
+"eWS-I2-Tbl.title" = "打开下载";
+
+/* Class = "NSMenu"; title = "Open Downloads"; ObjectID = "lGz-hd-LbK"; */
+"lGz-hd-LbK.title" = "打开下载";
