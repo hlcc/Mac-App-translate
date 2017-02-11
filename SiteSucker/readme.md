@@ -10,8 +10,9 @@
 
 ### 截图
 
-![](readme/Screenshots01.png)
+![](https://github.com/hlcc/Mac-App-translate/blob/master/Site%20Sucker/ver.2.10.1/Screenshots01.png?raw=true)
 
 
-![](readme/Screenshots02.png)
+![](https://github.com/hlcc/Mac-App-translate/blob/master/Site%20Sucker/ver.2.10.1/Screenshots02.png?raw=true)
+
 
