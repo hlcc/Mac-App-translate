@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1217" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="0.0" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PKTSharingSheetProfileInfoWindowController">
+            <connections>
+                <outlet property="buttonsContainerView" destination="219" id="226"/>
+                <outlet property="cancelButton" destination="220" id="227"/>
+                <outlet property="progressIndicator" destination="224" id="228"/>
+                <outlet property="saveAndSendButton" destination="222" id="229"/>
+                <outlet property="subtitleTextField" destination="194" id="230"/>
+                <outlet property="tableView" destination="199" id="231"/>
+                <outlet property="titleTextField" destination="196" id="232"/>
+                <outlet property="window" destination="192" id="233"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <customObject id="191" customClass="NSApplication"/>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" visibleAtLaunch="NO" animationBehavior="default" id="192">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="373" height="276"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
+            <view key="contentView" id="193">
+                <rect key="frame" x="0.0" y="0.0" width="373" height="276"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="196">
+                        <rect key="frame" x="32" y="217" width="309" height="34"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="完善你的个人资料" id="197">
+                            <font key="font" size="16" name="HelveticaNeue-Bold"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="194">
+                        <rect key="frame" x="32" y="165" width="309" height="49"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="请提供您的全名，以便您的朋友可以知道您。" id="195">
+                            <font key="font" size="14" name="HelveticaNeue-Medium"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <scrollView focusRingType="none" borderType="none" autohidesScrollers="YES" horizontalLineScroll="36" horizontalPageScroll="10" verticalLineScroll="36" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="198" customClass="PKTSharingSheetProfileInfoScrollView">
+                        <rect key="frame" x="32" y="49" width="326" height="108"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="iSh-tZ-Xyo">
+                            <rect key="frame" x="0.0" y="0.0" width="326" height="108"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <tableView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="34" id="199" customClass="PKTSharingSheetProfileInfoTableView">
+                                    <rect key="frame" x="0.0" y="0.0" width="326" height="108"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <size key="intercellSpacing" width="3" height="2"/>
+                                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                    <tableColumns>
+                                        <tableColumn identifier="AutomaticTableColumnIdentifier.0" width="323" minWidth="40" maxWidth="1000" id="200">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
+                                            </tableHeaderCell>
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="201">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                        </tableColumn>
+                                    </tableColumns>
+                                    <registeredNibsByIdentifier>
+                                        <nib key="PKTSharingSheetProfileInfoEmailCellView">
+                                            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGJidYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKUHCBkd
+I1UkbnVsbNgJCgsMDQ4PEBESExQUExITViRjbGFzc18QE05TTmliRmlsZVNvdW5kQmxvYnNfEA9OU05p
+YkZpbGVJbWFnZXNfEBBOU05pYkZpbGVJc0tleWVkXxAYTlNOaWJGaWxlVXNlUGFyZW50QnVuZGxlXU5T
+TmliRmlsZURhdGFfEBNOU05pYkZpbGVJbWFnZUJsb2JzXxAPTlNOaWJGaWxlU291bmRzgASAAoAACQmA
+AIACgADSGgkbHFpOUy5vYmplY3RzoIAD0h4fICFaJGNsYXNzbmFtZVgkY2xhc3Nlc1dOU0FycmF5oiAi
+WE5TT2JqZWN00h4fJCVVTlNOaWKiJCJfEA9OU0tleWVkQXJjaGl2ZXLRKClUcm9vdIABAAgAEQAaACMA
+LQAyADcAPQBDAFQAWwBxAIMAlgCxAL8A1QDnAOkA6wDtAO4A7wDxAPMA9QD6AQUBBgEIAQ0BGAEhASkB
+LAE1AToBQAFDAVUBWAFdAAAAAAAAAgEAAAAAAAAAKgAAAAAAAAAAAAAAAAAAAV8
+</mutableData>
+                                        </nib>
+                                        <nib key="PKTSharingSheetProfileInfoFirstNameCellView">
+                                            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGJidYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKUHCBkd
+I1UkbnVsbNgJCgsMDQ4PEBESExQUExITViRjbGFzc18QE05TTmliRmlsZVNvdW5kQmxvYnNfEA9OU05p
+YkZpbGVJbWFnZXNfEBBOU05pYkZpbGVJc0tleWVkXxAYTlNOaWJGaWxlVXNlUGFyZW50QnVuZGxlXU5T
+TmliRmlsZURhdGFfEBNOU05pYkZpbGVJbWFnZUJsb2JzXxAPTlNOaWJGaWxlU291bmRzgASAAoAACQmA
+AIACgADSGgkbHFpOUy5vYmplY3RzoIAD0h4fICFaJGNsYXNzbmFtZVgkY2xhc3Nlc1dOU0FycmF5oiAi
+WE5TT2JqZWN00h4fJCVVTlNOaWKiJCJfEA9OU0tleWVkQXJjaGl2ZXLRKClUcm9vdIABAAgAEQAaACMA
+LQAyADcAPQBDAFQAWwBxAIMAlgCxAL8A1QDnAOkA6wDtAO4A7wDxAPMA9QD6AQUBBgEIAQ0BGAEhASkB
+LAE1AToBQAFDAVUBWAFdAAAAAAAAAgEAAAAAAAAAKgAAAAAAAAAAAAAAAAAAAV8
+</mutableData>
+                                        </nib>
+                                        <nib key="PKTSharingSheetProfileInfoLastNameCellView">
+                                            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGJidYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKUHCBkd
+I1UkbnVsbNgJCgsMDQ4PEBESExQUExITViRjbGFzc18QE05TTmliRmlsZVNvdW5kQmxvYnNfEA9OU05p
+YkZpbGVJbWFnZXNfEBBOU05pYkZpbGVJc0tleWVkXxAYTlNOaWJGaWxlVXNlUGFyZW50QnVuZGxlXU5T
+TmliRmlsZURhdGFfEBNOU05pYkZpbGVJbWFnZUJsb2JzXxAPTlNOaWJGaWxlU291bmRzgASAAoAACQmA
+AIACgADSGgkbHFpOUy5vYmplY3RzoIAD0h4fICFaJGNsYXNzbmFtZVgkY2xhc3Nlc1dOU0FycmF5oiAi
+WE5TT2JqZWN00h4fJCVVTlNOaWKiJCJfEA9OU0tleWVkQXJjaGl2ZXLRKClUcm9vdIABAAgAEQAaACMA
+LQAyADcAPQBDAFQAWwBxAIMAlgCxAL8A1QDnAOkA6wDtAO4A7wDxAPMA9QD6AQUBBgEIAQ0BGAEhASkB
+LAE1AToBQAFDAVUBWAFdAAAAAAAAAgEAAAAAAAAAKgAAAAAAAAAAAAAAAAAAAV8
+</mutableData>
+                                        </nib>
+                                    </registeredNibsByIdentifier>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-2" id="235"/>
+                                        <outlet property="delegate" destination="-2" id="236"/>
+                                    </connections>
+                                </tableView>
+                            </subviews>
+                        </clipView>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="217">
+                            <rect key="frame" x="0.0" y="119" width="302" height="16"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="218">
+                            <rect key="frame" x="224" y="17" width="15" height="102"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
+                    <customView id="219">
+                        <rect key="frame" x="120" y="0.0" width="253" height="41"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <progressIndicator horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" id="224">
+                                <rect key="frame" x="20" y="11" width="16" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                            </progressIndicator>
+                            <button id="222">
+                                <rect key="frame" x="136" y="7" width="82" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <buttonCell key="cell" type="square" title="发送" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="223" customClass="PKTButtonCell">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="saveButtonPressed:" target="-2" id="243"/>
+                                </connections>
+                            </button>
+                            <button id="220">
+                                <rect key="frame" x="44" y="9" width="82" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <buttonCell key="cell" type="square" title="取消" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="221" customClass="PKTButtonCell">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="cancelButtonPressed:" target="-2" id="244"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </customView>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="234"/>
+            </connections>
+        </window>
+        <customView id="225">
+            <rect key="frame" x="0.0" y="0.0" width="237" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+        </customView>
+    </objects>
+</document>
